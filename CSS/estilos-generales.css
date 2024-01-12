@@ -1,0 +1,24 @@
+/*Estilos generales*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --color-uno: #113E59;
+    --color-dos: #496773;
+    --color-tres: #CEE8F2;
+    --color-blanco: #F2F2F2;
+    --color-negro: #000;
+    --color-oscuro: #0B3140;
+}
+
+/* ------------------------------------------------------------------------------------------- */

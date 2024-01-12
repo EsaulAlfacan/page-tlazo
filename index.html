@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es-mx"> <!--Cambiar al idioma deseado-->
+
+<head>
+
+    <!--Etiquetas Meta-->
+    <meta charset="UTF-8"> <!--Tipo de codificación de los caractereres-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="thema-color" content="#alfguncolor">
+    <meta name="description" contenteditable="Una breve descripción de no más de 20 palabras">
+    <!--Al iniciar siempre ocupe el tamaño de la pantalla-->
+
+    <!--Etiquetas link-->
+    <link rel="stylesheet" href="/CSS/estilos-menu.css">
+    <link rel="stylesheet" href="/landing-page/css/estilos-landing-page.css">
+    <link rel="stylesheet" href="/CSS/estilos-pie-pagina.css">
+
+    <!--Etiqueta titulo-->
+    <title>Agencia Tlazo</title>
+
+    <!--Etiquetas fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <div class="contenedor-menu">
+                <div class="logo">
+                    <img src="/ASSETS/menu/Perfil.webp" alt="logo">
+                </div>
+                <div class="hamburguesa">&#9776;</div>
+                <ul class="lista">
+                    <li class="lista-link"><a href="#inicio" class="link">Inicio</a></li>
+                    <li class="lista-link"><a href="#servicios" class="link">Productos</a></li>
+                    <li class="lista-link"><a href="#beneficios" class="link">Pagar</a></li>
+                    <!--<li class="lista-link"><a href="#testimonios" class="link">Testimonios</a></li>-->
+                    <li class="lista-link"><a href="#preguntas" class="link">Preguntas</a></li>
+                    <li class="lista-link"><a href="#contacto" class="link">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main id="inicio" class="contenedor-encabezado">
+        <div class="encabezado-texto">
+            <h1 class="titulo-encabezado">Bienvenido a Tlazo</h1>
+            <p>Tlazo, la agencia donde la innovación y la excelencia se encuentran. Descubre un mundo de productos
+                digitales de calidad superior, diseñados para enriquecer tu vida profesional y personal. ¡Explora con
+                nosotros y vive la experiencia Tlazo!</p>
+        </div>
+        <!--
+            <div class="carrusel-principal">
+            <div class="contenedor-carrusel">
+                <img class="slide" src="/landing-page/assets/encabezado/imagen1.jpg" alt="Titulo de la imagen1"
+                    title="Nombre de la imagen (breve)">
+                <img class="slide" src="/landing-page/assets/encabezado/imagen2.jpg" alt="Imagen2">
+                <img class="slide" src="/landing-page/assets/encabezado/imagen3.jpg" alt="Imagen3">
+                <img class="slide" src="/landing-page/assets/encabezado/imagen4.jpg" alt="Imagen4">
+                <img class="slide" src="/landing-page/assets/encabezado/imagen5.jpg" alt="Imagen5">
+            </div>
+            <div class="botones">
+                <button class="btn-encabezado" id="izquierda"><img src="/landing-page/assets/encabezado/flecha-izq.svg"
+                        alt="flecha"></button>
+                <button class="btn-encabezado" id="derecha"> <img src="/landing-page/assets/encabezado/flecha-der.svg"
+                        alt="flecha"></button>
+            </div>
+        </div>
+    -->
+        <a href="" style="text-decoration: none;">
+            <div class="boton-accion">
+                <button class="btn-accion">whatsapp</button>
+            </div>
+        </a>
+    </main>
+
+    <div class="contenedor-servicio" id="servicios">
+        <div class="informacion">
+            <div class="problematica">
+                <h2>Estos son nuestros productos<br>¿Necesitas esto?</h2>
+                <p>Visualiza tu éxito, hazlo realidad. Consulta nuestros productos sin compromiso y da el primer paso
+                    hacia tus objetivos.</p>
+            </div>
+
+            <div class="solucion">
+                <h3>Catalogo</h3>
+                <div class="contenedor-servicios">
+                    <div class="servicio">
+                        <div class="carrusel" id="carrusel">
+                            <img src="/ASSETS/productos/plantillasPowerpoint/1.webp" alt="Plantilla 1">
+                            <img src="/ASSETS/productos/plantillasPowerpoint/2.webp" alt="Plantilla 2">
+                            <img src="/ASSETS/productos/plantillasPowerpoint/3.webp" alt="Plantilla 3">
+                            <img src="/ASSETS/productos/plantillasPowerpoint/4.webp" alt="Plantilla 4">
+                        </div>
+                        <p>Paquete Exclusivo de Más de 300 Plantillas de PowerPoint: Variedad y Calidad para Tus
+                            Presentaciones.</p>
+                        <p>No pagues $49.99 mxm, por lanzamiento adquierelo a:</p>
+
+                        <a href=""><button class="btn-servicio">$24.99 </button></a>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="contenedor-beneficios" id="beneficios">
+            <div class="informacion-beneficios">
+                <h4>Medios de pago</h4>
+            </div>
+
+            <div class="contenedor-cartas">
+                <div class="carta">
+                    <h6>Transferencia</h6>
+                    <img src="/landing-page/assets/encabezado/imagen3.jpg" alt="Beneficio">
+                    <p>Cuenta a nombre de <button class="btn__pago btn-nombre"><i
+                                class="fa-solid fa-copy"></i></button>:
+                        <br>
+                        <span id="nombre">Alejandro Canales</span>
+                    </p>
+
+                    <br>
+
+                    <p>CLABE <button class="btn__pago btn-clave"><i class="fa-solid fa-copy"></i></button>:
+                        <br>
+                        <span id="clave">6381 8001 0182 7228 89</span>
+                    </p>
+
+                    <br>
+
+                    <p>Banco <button class="btn__pago btn-banco"><i class="fa-solid fa-copy"></i></button>:
+                        <br>
+                        <span id="banco">NU México</span>
+                    </p>
+                </div>
+
+                <div class="carta">
+                    <h6>Depósito</h6>
+                    <img src="/landing-page/assets/encabezado/imagen3.jpg" alt="Beneficio">
+                    <p>Cuenta a nombre de:
+                        <br>
+                        <span>Alejandro Canales</span>
+                    </p>
+
+                    <br>
+
+                    <p>CLABE:
+                        <br>
+                        <span>5267 7768 0537 2549</span>
+                    </p>
+
+                    <br>
+
+                    <p>Banco:
+                        <br>
+                        <span>NU México</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!--
+        <div class="contenedor-testimonios" id="testimonios-container">
+            <h5>Testimonios</h5>
+            <div class="testimonio">
+                <div class="avatar">
+                    <img src="/landing-page/assets/encabezado/imagen4.jpg" alt="Avatar">
+                </div>
+                <div class="contenido">
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vehicula dolor non risus
+                        condimentum,
+                        sit amet malesuada velit aliquet."</p>
+                    <span class="nombre">- Juan Pérez</span>
+                </div>
+            </div>
+
+            <div class="testimonio">
+                <div class="avatar">
+                    <img src="/landing-page/assets/encabezado/imagen4.jpg" alt="Avatar">
+                </div>
+                <div class="contenido">
+                    <p>"Integer sit amet felis nec odio varius tristique. In hac habitasse platea dictumst. Proin quis
+                        augue
+                        at libero fringilla suscipit."</p>
+                    <span class="nombre">- María González</span>
+                </div>
+            </div>
+
+
+        </div>
+-->
+
+        <section class="contendor-preguntas" id="preguntas">
+            <div class="preguntas">
+                <h6>Preguntas Frecuentes</h6>
+                <div class="informacion-pregunta">
+                    <h2 class="pregunta">¿Prgunta uno?</h2>
+                    <p class="respuesta">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur dolores
+                        voluptate aperiam est blanditiis. Voluptatem culpa velit reiciendis quas veritatis voluptate
+                        assumenda laudantium modi enim! Explicabo quae repellat culpa inventore?</p>
+                </div>
+
+                <div class="informacion-pregunta">
+                    <h2 class="pregunta">¿Prgunta dos?</h2>
+                    <p class="respuesta">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur dolores
+                        voluptate aperiam est blanditiis. Voluptatem culpa velit reiciendis quas veritatis voluptate
+                        assumenda laudantium modi enim! Explicabo quae repellat culpa inventore?</p>
+                </div>
+
+                <div class="informacion-pregunta">
+                    <h2 class="pregunta">¿Prgunta tres?</h2>
+                    <p class="respuesta">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur dolores
+                        voluptate aperiam est blanditiis. Voluptatem culpa velit reiciendis quas veritatis voluptate
+                        assumenda laudantium modi enim! Explicabo quae repellat culpa inventore?</p>
+                </div>
+                <!-- Agrega más preguntas y respuestas según sea necesario -->
+            </div>
+        </section>
+
+        <div style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M-19.47,117.92 C150.00,150.00 320.26,5.43 517.20,133.72 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #3953E1;"></path>
+            </svg>
+        </div>
+
+
+        <footer class="final" id="contacto">
+
+            <ul class="iconos-sociales">
+
+                <li><a rel="noopener" target="_blank" href="mailto:mexomex.ga@gmail.com"><i id="ic2"
+                            class="fa-solid fa-envelope"></i></a></li>
+                <li><a rel="noopener" target="_blank" href="https://www.facebook.com/mexomex.ga"><i id="ic3"
+                            class="fa-brands fa-facebook"></i></a></li>
+                <li><a rel="noopener" target="_blank" href="https://api.whatsapp.com/send?phone=7751171930"><i id="ic4"
+                            class="fa-brands fa-whatsapp"></i></a></li>
+
+            </ul>
+
+            <p>Todos los derechos reservados <i class="fa-regular fa-copyright"></i> Tlazo 2024</p>
+
+
+            <a rel="noopener" target="_blank" href="https://idpats.com/">
+                <div class="desarrollado">
+                    <h6>Sitio Web desarollado por:</h6>
+                </div>
+                <div class="encabezado-idpats">
+                    <div class="letras">
+                        <h3 class="letras-individual"><span class="letra-i">I</span></h3>
+                    </div>
+                    <div class="letras">
+                        <h3 class="letras-individual"><span class="letra-d">D</span></h3>
+                    </div>
+                    <div class="letras">
+                        <h3 class="letras-individual"><span class="letra-p">P</span></h3>
+                    </div>
+                    <div class="letras">
+                        <h3 class="letras-individual"><span class="letra-a">A</span></h3>
+                    </div>
+                    <div class="letras">
+                        <h3 class="letras-individual"><span class="letra-t">T</span></h3>
+                    </div>
+                    <div class="letras">
+                        <h3 class="letras-individual"><span class="letra-s">S</span></h3>
+                    </div>
+                </div>
+            </a>
+        </footer>
+
+        <!--Etiquetas scripts-->
+        <script src="/landing-page/js/menu/menu.js"></script>
+        <script src="/landing-page/js/encabezado/carrusel.js"></script>
+        <script src="/landing-page/js/encabezado/men-whats.js"></script>
+        <script src="/landing-page/js/testimonios/slider-tesimonios.js"></script>
+        <script src="/landing-page/js/preguntas/preguntas.js"></script>
+        <script src="https://kit.fontawesome.com/347a447390.js" crossorigin="anonymous"></script>
+        <script src="/JS/idpats/idpats-com.js"></script>
+        <script src="/landing-page/js/productos/carrusel.js"></script>
+        <script src="/landing-page/js/medios-pago/copiar-nombre.js"></script>
+</body>
+
+</html>
