@@ -3,10 +3,11 @@ document.addEventListener('DOMContentLoaded', function () {
     const textToCopy = document.getElementById('clave');
 
     copyButton.addEventListener('click', function () {
-        const range = document.createRange();
-        range.selectNode(textToCopy);
-        window.getSelection().removeAllRanges(); // quita cualquier selección existente
-        window.getSelection().addRange(range); // selecciona el texto
+        const textWithoutSpaces = textToCopy.textContent.replace(/\s/g, ''); // elimina espacios
+        const textArea = document.createElement('textarea'); // crea un área de texto temporal
+        textArea.value = textWithoutSpaces;
+        document.body.appendChild(textArea);
+        textArea.select(); // selecciona el texto del área de texto
 
         try {
             const successful = document.execCommand('copy');
@@ -16,6 +17,6 @@ document.addEventListener('DOMContentLoaded', function () {
             alert('Oops, no se pudo copiar');
         }
 
-        window.getSelection().removeAllRanges(); // limpia la selección
+        document.body.removeChild(textArea); // elimina el área de texto temporal
     });
 });
