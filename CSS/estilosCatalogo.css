@@ -26,6 +26,10 @@ section[id] {
 
 /*ESTILOS DEL CARRITO*/
 .carritos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: sticky;
     top: 50px;
     width: 100%;
@@ -44,7 +48,7 @@ section[id] {
 }
 
 .platillo-solicitado h2 {
-    font-size: 20px;
+    font-size: 15px;
     letter-spacing: 2px;
     color: var(--color-1);
     text-align: center;
@@ -52,11 +56,12 @@ section[id] {
 }
 
 .platillos__lista {
+    display: flex;
     list-style: none;
     padding-left: 20px;
     max-height: 230px;
     overflow-y: scroll;
-
+justify-content: center;
 }
 
 .carrito__costo {
@@ -68,19 +73,18 @@ section[id] {
 }
 
 .carrito-pedir {
-    position: relative;
+    position: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--color-1);
     color: var(--color-3);
     border: none;
-    padding: 10px 20px;
-    margin-top: 15px;
+    padding: 5px 20px;
+    margin-top: 5px;
     font-size: 1rem;
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .carrito-pedir:hover {
@@ -398,7 +402,8 @@ input[type="radio"]:checked+label:hover:before {
 }
 
 .costeTotal{
-    font-size: 1.3rem;
+    text-align: center;
+    font-size: 1.1rem;
     color: #005089;
     font-weight: 800;
     letter-spacing: 2px;
