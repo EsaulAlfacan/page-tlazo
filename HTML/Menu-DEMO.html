@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+
+<head>
+    <!--ETIQUETAS META-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow, noarchive">
+    <meta name="theme-color" content="#708c32">
+
+    <!--ETIQUETA TITULO-->
+    <title>Menú DEMO</title>
+
+    <!--ETIQUETAS ESTILOS (CSS)-->
+    <link rel="stylesheet" href="/proyecto-menus/menus/DEMO/contenido/css/estilosCatalogo.css">
+
+    <!--ETIQUETAS FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,600;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="encabezado">
+        <h1 class="encabezado__titulo">Menú DEMO</h1>
+        <img class="encabezado__img" src="/proyecto-menus/menus/DEMO/contenido/images/demo-logotipo.webp" alt="CAROL">
+        <div class="encabezado__redes">
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok"></i> </a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+    </header>
+
+    <nav class="menu">
+        <div class="menu__iconos">
+
+            <div class="contenedor__buscador">
+                <button class="menu__buscar" aria-label="Buscar en el menú">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <input class="menu__buscador" type="search" placeholder="Buscar platillos..."
+                    aria-label="Buscar platillos" />
+            </div>
+
+            <button class="menu__icono" aria-label="Abrir menú">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <ul>
+            <button class="menu__cerrar" aria-label="Cerrar menú">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <li><a href="#entradas">Entradas</a></li>
+            <li><a href="#principales">Principales</a></li>
+            <li><a href="#mar">Mar</a></li>
+            <li><a href="#comidarapida">Comida Rápida</a></li>
+            <li><a href="#postres">Postres</a></li>
+            <li><a href="#bebidas">Bebidas</a></li>
+        </ul>
+    </nav>
+
+    <section class="carritos">
+        <article class="platillo-solicitado">
+            <h2>Platillos Solicitados</h2>
+            <div class="platillos__lista"></div>
+        </article>
+        <button class="carrito-pedir" type="button">Pedir Carrito</button>
+    </section>
+
+
+    <main class="platillos">
+        <section class="entradas" id="entradas">
+            <h4 class="platillo__titulo">ENTRADAS</h4>
+            <article class="platillo">
+                <img src="/proyecto-menus/menus/DEMO/contenido/images/platillos/ensalada cesar.webp"
+                    alt="Ensalada César">
+                <div class="platillo__detalles">
+                    <h5 class="platillo__nombre">Ensalada César</h5>
+                    <p class="platillo__descripcion">Clásica con lechuga romana, crutones, parmesano y aderezo César.
+                    </p>
+                    <p class="platillo__precio">MXN 80.00</p>
+                </div>
+                <button class="platillo__añadir">
+                    <i class="fa-solid fa-plus"></i> Añadir
+                </button>
+            </article>
+
+            <article class="platillo">
+                <img src="/proyecto-menus/menus/DEMO/contenido/images/platillos/bruschettas de tomate.webp"
+                    alt="Ensalada César">
+                <div class="platillo__detalles">
+                    <h5 class="platillo__nombre">Bruschettas de tomate y albahaca</h5>
+                    <p class="platillo__descripcion">Pan tostado con tomate fresco y albahaca.
+                    </p>
+                    <p class="platillo__precio">MXN 90.00</p>
+                </div>
+                <button class="platillo__añadir">
+                    <i class="fa-solid fa-plus"></i> Añadir
+                </button>
+            </article>
+
+            <article class="platillo">
+                <img src="/proyecto-menus/menus/DEMO/contenido/images/platillos/ceviche de camaron.webp"
+                    alt="Ensalada César">
+                <div class="platillo__detalles">
+                    <h5 class="platillo__nombre">Ceviche de camarón</h5>
+                    <p class="platillo__descripcion">Camarones marinados en jugo de limón con cebolla.
+                    </p>
+                    <p class="platillo__precio">MXN 120.00</p>
+                </div>
+                <button class="platillo__añadir">
+                    <i class="fa-solid fa-plus"></i> Añadir
+                </button>
+            </article>
+
+            <article class="platillo">
+                <img src="/proyecto-menus/menus/DEMO/contenido/images/platillos/ensalda caprese.webp"
+                    alt="Ensalada César">
+                <div class="platillo__detalles">
+                    <h5 class="platillo__nombre">Ensalada Caprese</h5>
+                    <p class="platillo__descripcion">Rodajas de tomate, mozzarella fresca y albahaca con aceite de
+                        oliva.
+                    </p>
+                    <p class="platillo__precio">MXN 100.00</p>
+                </div>
+                <button class="platillo__añadir">
+                    <i class="fa-solid fa-plus"></i> Añadir
+                </button>
+            </article>
+        </section>
+
+        <section class="entradas" id="principales">
+            <h4 class="platillo__titulo">PLATOS PRINCIPALES</h4>
+            <article class="platillo">
+                <img src="/proyecto-menus/menus/DEMO/contenido/images/platillos/pechuga de pollo espinacas.webp"
+                    alt="Ensalada César">
+                <div class="platillo__detalles">
+                    <h5 class="platillo__nombre">Pechuga de pollo rellena de espinacas y queso</h5>
+                    <p class="platillo__descripcion">Jugosa pechuga rellena, servida con salsa cremosa.
+                    </p>
+                    <p class="platillo__precio">MXN 180.00</p>
+                </div>
+                <button class="platillo__añadir">
+                    <i class="fa-solid fa-plus"></i> Añadir
+                </button>
+            </article>
+
+            <article class="platillo">
+                <img src="/proyecto-menus/menus/DEMO/contenido/images/platillos/filete mignon con salsa de vino.webp"
+                    alt="Ensalada César">
+                <div class="platillo__detalles">
+                    <h5 class="platillo__nombre">Filete mignon con salsa de vino tinto</h5>
+                    <p class="platillo__descripcion">Corte fino de res en salsa de vino, acompañado de vegetales.
+                    </p>
+                    <p class="platillo__precio">MXN 250.00</p>
+                </div>
+                <button class="platillo__añadir">
+                    <i class="fa-solid fa-plus"></i> Añadir
+                </button>
+            </article>
+
+            <article class="platillo">
+                <img src="/proyecto-menus/menus/DEMO/contenido/images/platillos/risoto de setas silvestres.webp"
+                    alt="Ensalada César">
+                <div class="platillo__detalles">
+                    <h5 class="platillo__nombre">Risotto de setas silvestres</h5>
+                    <p class="platillo__descripcion">Arroz cremoso con una selección de setas y queso parmesano.
+                    </p>
+                    <p class="platillo__precio">MXN 190.00</p>
+                </div>
+                <button class="platillo__añadir">
+                    <i class="fa-solid fa-plus"></i> Añadir
+                </button>
+            </article>
+
+            <article class="platillo">
+                <img src="/proyecto-menus/menus/DEMO/contenido/images/platillos/paella valenciana.webp"
+                    alt="Ensalada César">
+                <div class="platillo__detalles">
+                    <h5 class="platillo__nombre">Paella Valenciana</h5>
+                    <p class="platillo__descripcion">Arroz con mariscos, pollo y verduras al estilo español.
+                    </p>
+                    <p class="platillo__precio">MXN 220.00</p>
+                </div>
+                <button class="platillo__añadir">
+                    <i class="fa-solid fa-plus"></i> Añadir
+                </button>
+            </article>
+        </section>
+
+        <section class="entradas" id="mar">
+            <h4 class="platillo__titulo">MAR</h4>
+            <article class="platillo">
+                <img src="/proyecto-menus/menus/DEMO/contenido/images/platillos/langosta a la termidor.webp"
+                    alt="Ensalada César">
+                <div class="platillo__detalles">
+                    <h5 class="platillo__nombre">Langosta a la termidor</h5>
+                    <p class="platillo__descripcion">Langosta cocida en una rica salsa termidor.
+                    </p>
+                    <p class="platillo__precio">MXN 350.00</p>
+                </div>
+                <button class="platillo__añadir">
+                    <i class="fa-solid fa-plus"></i> Añadir
+                </button>
+            </article>
+
+            <article class="platillo">
+                <img src="/proyecto-menus/menus/DEMO/contenido/images/platillos/salmon al horno con eneldo.webp"
+                    alt="Ensalada César">
+                <div class="platillo__detalles">
+                    <h5 class="platillo__nombre">Salmón al horno con eneldo y limón</h5>
+                    <p class="platillo__descripcion">Salmón fresco horneado con hierbas y cítricos.
+                    </p>
+                    <p class="platillo__precio">MXN 240.00</p>
+                </div>
+                <button class="platillo__añadir">
+                    <i class="fa-solid fa-plus"></i> Añadir
+                </button>
+            </article>
+
+            <article class="platillo">
+                <img src="/proyecto-menus/menus/DEMO/contenido/images/platillos/paella de mariscos.webp"
+                    alt="Ensalada César">
+                <div class="platillo__detalles">
+                    <h5 class="platillo__nombre">Paella de mariscos</h5>
+                    <p class="platillo__descripcion">Arroz sazonado con una variedad de mariscos frescos.
+                    </p>
+                    <p class="platillo__precio">MXN 230.00</p>
+                </div>
+                <button class="platillo__añadir">
+                    <i class="fa-solid fa-plus"></i> Añadir
+                </button>
+            </article>
+
+            <article class="platillo">
+                <img src="/proyecto-menus/menus/DEMO/contenido/images/platillos/filete de dorado con salsa de mango.webp"
+                    alt="Ensalada César">
+                <div class="platillo__detalles">
+                    <h5 class="platillo__nombre">Filete de dorado con salsa de mango</h5>
+                    <p class="platillo__descripcion">Pescado dorado acompañado de una dulce salsa de mango.
+                    </p>
+                    <p class="platillo__precio">MXN 220.00</p>
+                </div>
+                <button class="platillo__añadir">
+                    <i class="fa-solid fa-plus"></i> Añadir
+                </button>
+            </article>
+        </section>
+
+        <section class="entradas" id="comidarapida">
+            <h4 class="platillo__titulo">COMIDA RÁPIDA</h4>
+            <article class="platillo">
+                <img src="/proyecto-menus/menus/DEMO/contenido/images/platillos/tacos al pastor.webp"
+                    alt="Ensalada César">
+                <div class="platillo__detalles">
+                    <h5 class="platillo__nombre">Tacos al pastor</h5>
+                    <p class="platillo__descripcion">Orden de 3 tacos de cerdo adobado con piña y cebolla.
+                    </p>
+                    <p class="platillo__precio">MXN 90.00</p>
+                </div>
+                <button class="platillo__añadir">
+                    <i class="fa-solid fa-plus"></i> Añadir
+                </button>
+            </article>
+
+            <article class="platillo">
+                <img src="/proyecto-menus/menus/DEMO/contenido/images/platillos/Wrap de verduras asadas y hummus.webp"
+                    alt="Ensalada César">
+                <div class="platillo__detalles">
+                    <h5 class="platillo__nombre">Wrap de verduras asadas y hummus</h5>
+                    <p class="platillo__descripcion">Tortilla rellena de vegetales y hummus.
+                    </p>
+                    <p class="platillo__precio">MXN 110.00</p>
+                </div>
+                <button class="platillo__añadir">
+                    <i class="fa-solid fa-plus"></i> Añadir
+                </button>
+            </article>
+
+            <article class="platillo">
+                <img src="/proyecto-menus/menus/DEMO/contenido/images/platillos/Pizza Margarita con masa delgada.webp"
+                    alt="Ensalada César">
+                <div class="platillo__detalles">
+                    <h5 class="platillo__nombre">Pizza Margarita con masa delgada</h5>
+                    <p class="platillo__descripcion">Pizza clásica con tomate, mozzarella y albahaca.
+                    </p>
+                    <p class="platillo__precio">MXN 160.00</p>
+                </div>
+                <button class="platillo__añadir">
+                    <i class="fa-solid fa-plus"></i> Añadir
+                </button>
+            </article>
+
+            <section class="entradas" id="postres">
+                <h4 class="platillo__titulo">POSTRES</h4>
+                <article class="platillo">
+                    <img src="/proyecto-menus/menus/DEMO/contenido/images/platillos/tiramisu.webp" alt="Ensalada César">
+                    <div class="platillo__detalles">
+                        <h5 class="platillo__nombre">Tiramisú</h5>
+                        <p class="platillo__descripcion">Capas de bizcochos de soletilla empapados en café, intercalados
+                            con una mezcla suave de queso mascarpone y espolvoreado con cacao.
+                        </p>
+                        <p class="platillo__precio">MXN 130.00</p>
+                    </div>
+                    <button class="platillo__añadir">
+                        <i class="fa-solid fa-plus"></i> Añadir
+                    </button>
+                </article>
+
+                <article class="platillo">
+                    <img src="/proyecto-menus/menus/DEMO/contenido/images/platillos/flan de caramelo.webp"
+                        alt="Ensalada César">
+                    <div class="platillo__detalles">
+                        <h5 class="platillo__nombre">Flan de caramelo</h5>
+                        <p class="platillo__descripcion">Un postre tradicional suave y cremoso de huevo y leche,
+                            horneado en un baño de agua y servido con un caramelo líquido dorado.
+                        </p>
+                        <p class="platillo__precio">MXN 90.00</p>
+                    </div>
+                    <button class="platillo__añadir">
+                        <i class="fa-solid fa-plus"></i> Añadir
+                    </button>
+                </article>
+
+                <article class="platillo">
+                    <img src="/proyecto-menus/menus/DEMO/contenido/images/platillos/Crème Brûlée.webp"
+                        alt="Ensalada César">
+                    <div class="platillo__detalles">
+                        <h5 class="platillo__nombre">Crème Brûlée</h5>
+                        <p class="platillo__descripcion">Una crema inglesa suave y rica, fragante con vainilla, y
+                            finalizada con una capa superior de azúcar caramelizada que se rompe al golpearla.
+                        </p>
+                        <p class="platillo__precio">MXN 110.00</p>
+                    </div>
+                    <button class="platillo__añadir">
+                        <i class="fa-solid fa-plus"></i> Añadir
+                    </button>
+                </article>
+
+            </section>
+
+            <section class="entradas" id="bebidas">
+                <h4 class="platillo__titulo">BEBIDAS</h4>
+                <article class="platillo">
+                    <img src="/proyecto-menus/menus/DEMO/contenido/images/platillos/limonada natural.webp"
+                        alt="Ensalada César">
+                    <div class="platillo__detalles">
+                        <h5 class="platillo__nombre">Limonada natural</h5>
+                        <p class="platillo__descripcion">Jugo de limón fresco endulzado al gusto.
+                        </p>
+                        <p class="platillo__precio">MXN 50.00</p>
+                    </div>
+                    <button class="platillo__añadir">
+                        <i class="fa-solid fa-plus"></i> Añadir
+                    </button>
+                </article>
+
+                <article class="platillo">
+                    <img src="/proyecto-menus/menus/DEMO/contenido/images/platillos/Cerveza artesanal local.webp"
+                        alt="Ensalada César">
+                    <div class="platillo__detalles">
+                        <h5 class="platillo__nombre">Cerveza artesanal local</h5>
+                        <p class="platillo__descripcion">Variedad según disponibilidad.
+                        </p>
+                        <p class="platillo__precio">MXN 70.00</p>
+                    </div>
+                    <button class="platillo__añadir">
+                        <i class="fa-solid fa-plus"></i> Añadir
+                    </button>
+                </article>
+
+                <article class="platillo">
+                    <img src="/proyecto-menus/menus/DEMO/contenido/images/platillos/Vino tinto de reserva.png"
+                        alt="Ensalada César">
+                    <div class="platillo__detalles">
+                        <h5 class="platillo__nombre">Vino tinto de reserva</h5>
+                        <p class="platillo__descripcion">Selección de vinos finos por copa.
+                        </p>
+                        <p class="platillo__precio">MXN 120.00</p>
+                    </div>
+                    <button class="platillo__añadir">
+                        <i class="fa-solid fa-plus"></i> Añadir
+                    </button>
+                </article>
+
+                <article class="platillo">
+                    <img src="/proyecto-menus/menus/DEMO/contenido/images/platillos/Mojito clásico.webp"
+                        alt="Ensalada César">
+                    <div class="platillo__detalles">
+                        <h5 class="platillo__nombre">Mojito clásico</h5>
+                        <p class="platillo__descripcion">Ron, menta, azúcar, lima y soda.
+                        </p>
+                        <p class="platillo__precio">MXN 90.00</p>
+                    </div>
+                    <button class="platillo__añadir">
+                        <i class="fa-solid fa-plus"></i> Añadir
+                    </button>
+                </article>
+            </section>
+    </main>
+
+    <footer class="presentacionFooter">
+        <section class="idpats">
+            <h6>Desarrolla tu menú con:</h6>
+            <a rel="noopener" target="_blank" href="https://idpats.com/proyecto-menus/menu.html">IDPATS</a>
+        </section>
+    </footer>
+
+
+    <!--ETIQUETAS SCRIPS-->
+    <script src="https://kit.fontawesome.com/347a447390.js" crossorigin="anonymous"></script>
+    <script src="/proyecto-menus/menus/DEMO/contenido/JS/menu-cerrar.js"></script>
+    <script src="/proyecto-menus/menus/DEMO/contenido/JS/menu-abrir-cerrar.js"></script>
+    <script src="/proyecto-menus/menus/DEMO/contenido/JS/añadir-platillo.js"></script>
+    <script src="/proyecto-menus/menus/DEMO/contenido/JS/precio-carrito.js"></script>
+    <script src="/proyecto-menus/menus/DEMO/contenido/JS/quitar-platillo.js"></script>
+    <script src="/proyecto-menus/menus/DEMO/contenido/JS/realizar-pedido.js"></script>
+    <script src="/proyecto-menus/menus/DEMO/contenido/JS/buscador.js"></script>
+
+</body>
+
+</html>

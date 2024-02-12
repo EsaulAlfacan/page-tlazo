@@ -1,296 +1,369 @@
 <!DOCTYPE html>
-<html lang="es-mx"> <!--Cambiar al idioma deseado-->
+<html lang="es-mx">
 
 <head>
+    <!--ETIQUETAS META-->
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <meta
+        name="robots"
+        content="index, follow, noarchive"
+    >
+    <meta
+        name="theme-color"
+        content="#708c32"
+    >
 
-    <!--Etiquetas Meta-->
-    <meta charset="UTF-8"> <!--Tipo de codificación de los caractereres-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index, follow">
-    <meta name="thema-color" content="#alfguncolor">
-    <meta name="description" contenteditable="Una breve descripción de no más de 20 palabras">
-    <!--Al iniciar siempre ocupe el tamaño de la pantalla-->
+    <!--ETIQUETA TITULO-->
+    <title>Tlazo</title>
 
-    <!--Etiquetas link-->
-    <link rel="stylesheet" href="/CSS/estilos-menu.css">
-    <link rel="stylesheet" href="/landing-page/css/estilos-landing-page.css">
-    <link rel="stylesheet" href="/CSS/estilos-pie-pagina.css">
+    <!--ETIQUETAS ESTILOS (CSS)-->
+    <link
+        rel="stylesheet"
+        href="/CSS/estilosIndex.css"
+    >
 
-    <!--Etiqueta titulo-->
-    <title>Agencia Tlazo</title>
-
-    <!--Etiquetas fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <!--ETIQUETAS FONTS-->
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,600;1,800;1,900&display=swap"
+        rel="stylesheet"
+    >
 </head>
 
-<body>
-    <header>
-        <nav class="menu">
-            <div class="contenedor-menu">
-                <div class="logo">
-                    <img src="/ASSETS/menu/Perfil.webp" alt="logo">
-                </div>
-                <div class="hamburguesa">&#9776;</div>
-                <ul class="lista">
-                    <li class="lista-link"><a href="#inicio" class="link">Inicio</a></li>
-                    <li class="lista-link"><a href="#servicios" class="link">Productos</a></li>
-                    <li class="lista-link"><a href="#beneficios" class="link">Pagar</a></li>
-                    <!--<li class="lista-link"><a href="#testimonios" class="link">Testimonios</a></li>-->
-                    <li class="lista-link"><a href="#preguntas" class="link">Preguntas</a></li>
-                    <li class="lista-link"><a href="#contacto" class="link">Contacto</a></li>
-                </ul>
-            </div>
-        </nav>
+<body class="presentacion__Body">
+    <header class="presentacionCabezera">
+        <h1 class="presentacionCabezera__titulo">TLAZO</h1>
+        <img
+            class="presentacionCabezera__img"
+            src="/ASSETS/images/index/logotipo.webp"
+            alt="CAROL"
+        >
+        <div class="presentacion__redes">
+            <a href="https://api.whatsapp.com/send?phone=5573973302&text=Quiero solicitar un pedido."><i
+                    class="fa-brands fa-whatsapp"
+                ></i></a>
+            <a href="https://www.facebook.com/tlazo.ga"><i class="fa-brands fa-facebook"></i></a>
+        </div>
     </header>
 
-    <main id="inicio" class="contenedor-encabezado">
-        <div class="encabezado-texto">
-            <h1 class="titulo-encabezado">Bienvenido a Tlazo</h1>
-            <p>Tlazo, la agencia donde la innovación y la excelencia se encuentran. Descubre un mundo de productos
-                digitales de calidad superior, diseñados para enriquecer tu vida profesional y personal. ¡Explora con
-                nosotros y vive la experiencia Tlazo!</p>
-        </div>
-        <!--
-            <div class="carrusel-principal">
-            <div class="contenedor-carrusel">
-                <img class="slide" src="/landing-page/assets/encabezado/imagen1.jpg" alt="Titulo de la imagen1"
-                    title="Nombre de la imagen (breve)">
-                <img class="slide" src="/landing-page/assets/encabezado/imagen2.jpg" alt="Imagen2">
-                <img class="slide" src="/landing-page/assets/encabezado/imagen3.jpg" alt="Imagen3">
-                <img class="slide" src="/landing-page/assets/encabezado/imagen4.jpg" alt="Imagen4">
-                <img class="slide" src="/landing-page/assets/encabezado/imagen5.jpg" alt="Imagen5">
-            </div>
-            <div class="botones">
-                <button class="btn-encabezado" id="izquierda"><img src="/landing-page/assets/encabezado/flecha-izq.svg"
-                        alt="flecha"></button>
-                <button class="btn-encabezado" id="derecha"> <img src="/landing-page/assets/encabezado/flecha-der.svg"
-                        alt="flecha"></button>
-            </div>
-        </div>
-    -->
-        <div class="boton-accion">
-            <button class="btn-accion">whatsapp</button>
-        </div>
-    </main>
-
-    <div class="contenedor-servicio" id="servicios">
-        <div class="informacion">
-            <div class="problematica">
-                <h2>Estos son nuestros productos<br>¿Necesitas esto?</h2>
-                <p>Visualiza tu éxito, hazlo realidad. Consulta nuestros productos sin compromiso y da el primer paso
-                    hacia tus objetivos.</p>
+    <main class="presentacionContenido">
+        <section class="presentacionContenido__modos">
+            <div class="presentacionContenido__item">
+                <i class="fa-solid fa-shop"></i>
+                <h6 class="presentacionContenido__nombre">En tienda</h6>
             </div>
 
-            <div class="solucion">
-                <h3>Catalogo</h3>
-                <div class="contenedor-servicios">
-                    <div class="servicio">
-                        <div class="carrusel" id="carrusel">
-                            <img src="/ASSETS/productos/plantillasPowerpoint/1.webp" alt="Plantilla 1">
-                            <img src="/ASSETS/productos/plantillasPowerpoint/2.webp" alt="Plantilla 2">
-                            <img src="/ASSETS/productos/plantillasPowerpoint/3.webp" alt="Plantilla 3">
-                            <img src="/ASSETS/productos/plantillasPowerpoint/4.webp" alt="Plantilla 4">
-                        </div>
-                        <p>Paquete Exclusivo de Más de 300 Plantillas de PowerPoint: Variedad y Calidad para Tus
-                            Presentaciones.</p>
-                        <p>No pagues $49.99 mxm, por lanzamiento adquierelo a:</p>
-
-                        <a href="https://api.whatsapp.com/send?phone=5573973302&text=Hola%2C%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n%20del%20Producto%3A%20m%C3%A1s%20de%20300%20plantillas%20de%20PowerPoint
-                            "><button class="btn-servicio">$24.99 </button></a>
-                    </div>
-
-
-                </div>
-
-            </div>
-        </div>
-
-        <div class="contenedor-beneficios" id="beneficios">
-            <div class="informacion-beneficios">
-                <h4>Medios de pago</h4>
+            <div class="presentacionContenido__item">
+                <i class="fa-solid fa-check-to-slot"></i>
+                <h6 class="presentacionContenido__nombre">Hacer pedido</h6>
             </div>
 
-            <p>Recuerda que una vez crealizado tu pago, debes enviar un comprobante del mismo mediante <a
-                    target="_blank" rel="noopener" href="https://api.whatsapp.com/send?phone=5573973302&text=Este%20es%20mi%20comprobante%20de%20pago:
-                    ">whatsapp</a>.</p>
-            <div class="contenedor-cartas">
-                <div class="carta">
-                    <h6>Transferencia</h6>
-                    <img src="/ASSETS/medios-pago/transferencia.webp" alt="Beneficio">
-                    <p>Cuenta a nombre de <button class="btn__pago btn-nombre"><i
-                                class="fa-solid fa-copy"></i></button>:
-                        <br>
-                        <span id="nombre">Alejandro Canales</span>
-                    </p>
-
-                    <br>
-
-                    <p>CLABE <button class="btn__pago btn-clave"><i class="fa-solid fa-copy"></i></button>:
-                        <br>
-                        <span id="clave">6381 8001 0182 7228 89</span>
-                    </p>
-
-                    <br>
-
-                    <p>Banco <button class="btn__pago btn-banco"><i class="fa-solid fa-copy"></i></button>:
-                        <br>
-                        <span id="banco">NU México</span>
-                    </p>
-                </div>
-
-                <div class="carta">
-                    <h6>Depósito</h6>
-                    <img src="/ASSETS/medios-pago/deposito.webp" alt="Beneficio">
-                    <p>Cuenta a nombre de:
-                        <br>
-                        <span>Alejandro Canales</span>
-                    </p>
-
-                    <br>
-
-                    <p>CLABE:
-                        <br>
-                        <span>5267 7768 0537 2549</span>
-                    </p>
-
-                    <br>
-
-                    <p>Banco:
-                        <br>
-                        <span>NU México</span>
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <!--
-        <div class="contenedor-testimonios" id="testimonios-container">
-            <h5>Testimonios</h5>
-            <div class="testimonio">
-                <div class="avatar">
-                    <img src="/landing-page/assets/encabezado/imagen4.jpg" alt="Avatar">
-                </div>
-                <div class="contenido">
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vehicula dolor non risus
-                        condimentum,
-                        sit amet malesuada velit aliquet."</p>
-                    <span class="nombre">- Juan Pérez</span>
-                </div>
+            <div class="presentacionContenido__item">
+                <i class="fa-solid fa-truck-fast"></i>
+                <h6 class="presentacionContenido__nombre">Envios</h6>
             </div>
 
-            <div class="testimonio">
-                <div class="avatar">
-                    <img src="/landing-page/assets/encabezado/imagen4.jpg" alt="Avatar">
-                </div>
-                <div class="contenido">
-                    <p>"Integer sit amet felis nec odio varius tristique. In hac habitasse platea dictumst. Proin quis
-                        augue
-                        at libero fringilla suscipit."</p>
-                    <span class="nombre">- María González</span>
-                </div>
-            </div>
-
-
-        </div>
--->
-
-        <section class="contendor-preguntas" id="preguntas">
-            <div class="preguntas">
-                <h6>Preguntas frecuentes</h6>
-                <div class="informacion-pregunta">
-                    <h2 class="pregunta">¿Qué productos ofrece la Agencia Tlazo?</h2>
-                    <p class="respuesta">La Agencia Tlazo ofrece una variedad de productos digitales. La sección de
-                        productos de la página web muestra un catálogo que los visitantes pueden consultar para ver más
-                        detalles sobre estos productos.</p>
-                </div>
-
-                <div class="informacion-pregunta">
-                    <h2 class="pregunta">¿Cómo puedo contactar a la Agencia Tlazo para más información o para realizar
-                        una compra?</h2>
-                    <p class="respuesta">Para contactar a la Agencia Tlazo, los visitantes pueden utilizar varias vías.
-                        Una de ellas es a través de WhatsApp, como se indica en el botón de acción en la sección
-                        principal de la página web. Además, hay enlaces de contacto en la sección del menú, lo que
-                        sugiere que los visitantes pueden comunicarse con la agencia para obtener más información o
-                        realizar compras.</p>
-                </div>
-
-                <div class="informacion-pregunta">
-                    <h2 class="pregunta">¿Qué métodos de pago acepta la Agencia Tlazo?</h2>
-                    <p class="respuesta">La Agencia Tlazo acepta varios métodos de pago, incluyendo transferencias
-                        bancarias y depósitos. En la sección de beneficios de la página web, se mencionan detalles
-                        específicos como los números de CLABE y los nombres de los bancos (NU México en este caso), lo
-                        que facilita a los clientes realizar pagos directamente a la cuenta de la agencia. Además, se
-                        proporcionan detalles como el nombre del titular de la cuenta para las transacciones.</p>
-                </div>
-                <!-- Agrega más preguntas y respuestas según sea necesario -->
+            <div class="presentacionContenido__item">
+                <i class="fa-regular fa-credit-card"></i>
+                <h6 class="presentacionContenido__nombre">Aceptamos tarjeta</h6>
             </div>
         </section>
 
-        <div style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
-                style="height: 100%; width: 100%;">
-                <path d="M-19.47,117.92 C150.00,150.00 320.26,5.43 517.20,133.72 L500.00,150.00 L0.00,150.00 Z"
-                    style="stroke: none; fill: #3953E1;"></path>
-            </svg>
+        <section class="presentacionContenido2">
+            <div class="presentacionContenido2__textos">
+                <p>Playeras multicolores</p>
+            </div>
+
+            <img
+                class="modeloImg"
+                src="/ASSETS/images/playeras/Playeras color sólidoPlayeras.webp"
+                alt="Playeras multicolores"
+            >
+
+            <div class="presentacionContenido2__botones">
+                <button>
+                    <a href="/proyecto-menus/menus/DEMO/Menu-DEMO.html"><span>Catálogo</span></a>
+                </button>
+
+                <button>
+                    <a
+                        href="https://api.whatsapp.com/send?phone=5573973302&text=Quiero solicitar un pedido."
+                        target="_blank"
+                        rel="noopener"
+                    ><span>Whatsapp</span></a>
+                </button>
+
+                <button id="toggleHorarioBtn">
+                    <span>Horario</span>
+                </button>
+
+                <button id="openEncuestaBtn">
+                    <span>Encuesta</span>
+                </button>
+            </div>
+
+            <img
+                class="modeloImg"
+                src="/ASSETS/images/playeras/Playeras color sólidoColores.webp"
+                alt="Colores de playeras"
+            >
+        </section>
+
+        <section class="presentacionContenido3">
+            <div class="presentacionContenido3__dirección">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119910.49140227915!2d-98.84680490139174!3d20.083805272253656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1a7716f1e038b%3A0x13315c101496b749!2sPachuca%20de%20Soto%2C%20Hgo.!5e0!3m2!1ses-419!2smx!4v1703646568179!5m2!1ses-419!2smx"
+                    width="600"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+            </div>
+        </section>
+    </main>
+
+    <section
+        class="horario"
+        id="horarioSection"
+        style="display: none;"
+    >
+        <div
+            class="horario__cerrar"
+            id="closeHorarioBtn"
+        >
+            <p>QUITAR HORARIO</p>
+        </div>
+        <div class="horario__cabezera">
+            <h6>Tlazo</h6>
+            <div class="horario__items">
+                <a
+                    href="tel:+525573973302"
+                    id="phoneCallLink"
+                ><i class="fa-solid fa-phone"></i></a>
+                <span id="shareIcon"> <i class="fa-solid fa-square-share-nodes"></i> </span>
+            </div>
         </div>
 
+        <div class="horario__info">
+            <h6>Horarios de atención</h6>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Día</th>
+                        <th>Apertura</th>
+                        <th>Cierre</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lunes</td>
+                        <td>10:00</td>
+                        <td>18:00</td>
+                    </tr>
+                    <tr>
+                        <td>Martes</td>
+                        <td>10:00</td>
+                        <td>18:00</td>
+                    </tr>
+                    <tr>
+                        <td>Miércoles</td>
+                        <td>10:00</td>
+                        <td>18:00</td>
+                    </tr>
+                    <tr>
+                        <td>Jueves</td>
+                        <td>10:00</td>
+                        <td>18:00</td>
+                    </tr>
+                    <tr>
+                        <td>Viernes</td>
+                        <td>10:00</td>
+                        <td>18:00</td>
+                    </tr>
+                    <tr>
+                        <td>Sábado</td>
+                        <td colspan="2">Cerrado</td>
+                    </tr>
+                    <tr>
+                        <td>Domingo</td>
+                        <td colspan="2">Cerrado</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
 
-        <footer class="final" id="contacto">
+    <section
+        class="encuesta"
+        id="encuestaSection"
+    >
+        <div
+            class="encuesta__cerrar"
+            id="closeEncuestaBtn"
+        >
+            <p>QUITAR ENCUESTA</p>
+        </div>
 
-            <ul class="iconos-sociales">
+        <!-- Pregunta 1: ¿Cómo calificas las instalaciones? -->
+        <div class="encuesta__pregunta">
+            <h6>¿Cómo calificas las instalaciones?</h6>
+            <ol>
+                <li>
+                    <label><input
+                            type="radio"
+                            name="calificacionInstalaciones"
+                            value="Excelente"
+                        >Excelente</label>
+                </li>
+                <li>
+                    <label><input
+                            type="radio"
+                            name="calificacionInstalaciones"
+                            value="Bueno"
+                        >Bueno</label>
+                </li>
+                <li>
+                    <label><input
+                            type="radio"
+                            name="calificacionInstalaciones"
+                            value="Regular"
+                        >Regular</label>
+                </li>
+                <li>
+                    <label><input
+                            type="radio"
+                            name="calificacionInstalaciones"
+                            value="Malo"
+                        >Malo</label>
+                </li>
+            </ol>
+        </div>
 
-                <li><a rel="noopener" target="_blank" href="mailto:agencia.tlazo.ga@gmail.com"><i id="ic2"
-                            class="fa-solid fa-envelope"></i></a></li>
-                <li><a rel="noopener" target="_blank" href="https://www.facebook.com/tlazo.ga"><i id="ic3"
-                            class="fa-brands fa-facebook"></i></a></li>
-                <li><a rel="noopener" target="_blank" href="https://api.whatsapp.com/send?phone=5573973302"><i id="ic4"
-                            class="fa-brands fa-whatsapp"></i></a></li>
+        <!-- Pregunta 2: ¿Cómo calificas el servicio de nuestros meseros? -->
+        <div class="encuesta__pregunta">
+            <h6>¿Cómo calificas el servicio brindado?</h6>
+            <ol>
+                <li>
+                    <label><input
+                            type="radio"
+                            name="calificacionServicio"
+                            value="Excelente"
+                        >Excelente</label>
+                </li>
+                <li>
+                    <label><input
+                            type="radio"
+                            name="calificacionServicio"
+                            value="Bueno"
+                        >Bueno</label>
+                </li>
+                <li>
+                    <label><input
+                            type="radio"
+                            name="calificacionServicio"
+                            value="Regular"
+                        >Regular</label>
+                </li>
+                <li>
+                    <label><input
+                            type="radio"
+                            name="calificacionServicio"
+                            value="Malo"
+                        >Malo</label>
+                </li>
+            </ol>
+        </div>
 
-            </ul>
+        <!-- Pregunta 3: ¿Cómo calificas la comida? -->
+        <div class="encuesta__pregunta">
+            <h6>¿Cómo calificas las playeras?</h6>
+            <ol>
+                <li>
+                    <label><input
+                            type="radio"
+                            name="calificacionComida"
+                            value="Excelente"
+                        >Excelente</label>
+                </li>
+                <li>
+                    <label><input
+                            type="radio"
+                            name="calificacionComida"
+                            value="Bueno"
+                        >Bueno</label>
+                </li>
+                <li>
+                    <label><input
+                            type="radio"
+                            name="calificacionComida"
+                            value="Regular"
+                        >Regular</label>
+                </li>
+                <li>
+                    <label><input
+                            type="radio"
+                            name="calificacionComida"
+                            value="Malo"
+                        >Malo</label>
+                </li>
+            </ol>
+        </div>
 
-            <p>Todos los derechos reservados <i class="fa-regular fa-copyright"></i> Tlazo 2024</p>
+        <!-- Pregunta 4: ¿Tienes alguna recomendación? -->
+        <div class="encuesta__pregunta">
+            <h6 class="encuesta__titulo">¿Tienes alguna recomendación?</h6>
+            <textarea
+                class="encuesta__textarea"
+                name="recomendacion"
+                id="recomendacion"
+                placeholder="Por favor, comparte tus comentarios o sugerencias aquí."
+            ></textarea>
+        </div>
 
+        <!-- Botón de envío -->
+        <button
+            type="submit"
+            id="btn__submit"
+            class="boton-enviar"
+        >Enviar</button>
 
-            <a rel="noopener" target="_blank" href="https://idpats.com/">
-                <div class="desarrollado">
-                    <h6>Sitio Web desarollado por:</h6>
-                </div>
-                <div class="encabezado-idpats">
-                    <div class="letras">
-                        <h3 class="letras-individual"><span class="letra-i">I</span></h3>
-                    </div>
-                    <div class="letras">
-                        <h3 class="letras-individual"><span class="letra-d">D</span></h3>
-                    </div>
-                    <div class="letras">
-                        <h3 class="letras-individual"><span class="letra-p">P</span></h3>
-                    </div>
-                    <div class="letras">
-                        <h3 class="letras-individual"><span class="letra-a">A</span></h3>
-                    </div>
-                    <div class="letras">
-                        <h3 class="letras-individual"><span class="letra-t">T</span></h3>
-                    </div>
-                    <div class="letras">
-                        <h3 class="letras-individual"><span class="letra-s">S</span></h3>
-                    </div>
-                </div>
-            </a>
-        </footer>
+    </section>
 
-        <!--Etiquetas scripts-->
-        <script src="/landing-page/js/menu/menu.js"></script>
-        <script src="/landing-page/js/encabezado/carrusel.js"></script>
-        <script src="/landing-page/js/encabezado/men-whats.js"></script>
-        <script src="/landing-page/js/testimonios/slider-tesimonios.js"></script>
-        <script src="/landing-page/js/preguntas/preguntas.js"></script>
-        <script src="https://kit.fontawesome.com/347a447390.js" crossorigin="anonymous"></script>
-        <script src="/JS/idpats/idpats-com.js"></script>
-        <script src="/landing-page/js/productos/carrusel.js"></script>
-        <script src="/landing-page/js/medios-pago/copiar-nombre.js"></script>
-        <script src="/landing-page/js/medios-pago/copiar-clabe.js"></script>
-        <script src="/landing-page/js/medios-pago/copiar-banco.js"></script>
+    <footer class="presentacionFooter">
+        <section class="idpats">
+            <h6>Desarrola tu catálogo con:</h6>
+            <a
+                rel="noopener"
+                target="_blank"
+                href="https://idpats.com/proyecto-menus/menu.html"
+            >IDPATS</a>
+        </section>
+    </footer>
+
+    <!--ETIQUETAS SCRIPTS-->
+    <script
+        src="https://kit.fontawesome.com/347a447390.js"
+        crossorigin="anonymous"
+    ></script>
+    <script src="JS/horario.js"></script>
+    <script src="JS/horario-llamada.js"></script>
+    <script src="JS/horario-compartir.js"></script>
+    <script src="JS/encuesta.js"></script>
+    <script src="JS/encuesta-mensaje.js"></script>
 
 </body>
 
