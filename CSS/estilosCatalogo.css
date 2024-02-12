@@ -296,6 +296,79 @@ section[id] {
     border-radius: 50%;
 }
 
+/* Estilos para el label y el campo de entrada */
+.nCantidad {
+    display: none;
+}
+
+.inputnCantidad {
+    padding: 10px;
+    width: 100px;
+    border: 1px solid var(--color-1);
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.inputnCantidad:focus {
+    border-color: var(--color-1);
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+/* Estilos para las casillas de selección */
+.tallas {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+}
+
+.tallas__medidas {
+    display: none;
+}
+
+label {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    color: var(--color-4);
+}
+
+label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--color-1);
+    background-color: var(--color-3);
+    border-radius: 10%;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+input[type="radio"]:checked+label:before {
+    border-color: var(--color-4);
+    background-color: var(--color-1);
+    border-radius: 50%;
+}
+
+label span {
+    margin-left: 10px;
+}
+
+label:hover:before {
+    border-color: var(--color-1);
+}
+
+input[type="radio"]:checked+label:hover:before {
+    border-color: var(--color-1);
+    background-color: var(--color-1);
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
 .platillo__detalles {
     flex-grow: 1;
 }
@@ -327,8 +400,22 @@ section[id] {
     transition: background-color 0.3s;
 }
 
+.platillo__quitar{
+background-color: var(--color-2);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
 .platillo__añadir:hover {
     background-color: var(--color-2);
+}
+
+.platillo__quitar:hover{
+        background-color: var(--color-1);
 }
 
 .fa-solid {
@@ -407,5 +494,25 @@ section[id] {
         justify-content: center;
         align-items: center;
         text-align: center;
+    }
+
+        label {
+            position: relative;
+            padding-left: 15px;
+            margin-bottom: 5px;
+            cursor: pointer;
+            color: var(--color-4);
+        }
+
+    .tallas{
+        flex-direction: row;
+        gap: 10px;
+        padding: 0px;
+        margin: 0;
+    }
+
+    .tallas__medidas{
+        padding: 0;
+        margin: 0;
     }
 }
