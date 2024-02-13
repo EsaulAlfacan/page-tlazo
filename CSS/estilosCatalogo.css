@@ -112,6 +112,12 @@ section[id] {
   letter-spacing: 1px;
 }
 
+.encabezado__titulo_link {
+  text-decoration: none;
+  color: var(--color-3);
+  margin-top: -12px;
+}
+
 .encabezado__img {
   max-height: 50px;
   width: auto;

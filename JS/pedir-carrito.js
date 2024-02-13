@@ -22,12 +22,30 @@ document.querySelector(".carrito-pedir").addEventListener("click", function () {
   let envio = 280;
 
   // Genera el enlace para abrir WhatsApp con el mensaje predefinido
-  let whatsappLink = `https://wa.me/${telefonoDestino}?text=${encodeURIComponent(
-    contenidoCarrito
-  )}
+  let whatsappLink =
+    `https://wa.me/${telefonoDestino}?text=${encodeURIComponent(
+      contenidoCarrito
+    )}
 Costo de envío $280 MXM. El costo total de su carrito es de: $${
-    parseInt(costosTotales) + envio
-  } MXM. Gracias por su solicitud.`;
+      parseInt(costosTotales) + envio
+    } MXM. Gracias por su solicitud.` +
+    "\n" +
+    "Para proceder con su envío realice una transferencia a:" +
+    "\n" +
+    "Banco NU México" +
+    "\n" +
+    "Esaul Alejandro Alfaro Canales" +
+    "\n" +
+    "6381 8001 0182 7228 89" +
+    "\n" +
+    "\n" +
+    "o depósito en banco u oxxo a:" +
+    "\n" +
+    "Banco NU México" +
+    "\n" +
+    "Esaul Alejandro Alfaro Canales" +
+    "\n" +
+    "5267 7768 0537 2549";
 
   // Abre una nueva ventana con el enlace para enviar el mensaje por WhatsApp
   window.open(whatsappLink, "_blank");
