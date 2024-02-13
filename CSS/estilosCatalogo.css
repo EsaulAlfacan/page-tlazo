@@ -34,7 +34,7 @@ section[id] {
   top: 50px;
   width: 100%;
   background-color: var(--color-3);
-  padding: 20px;
+  padding: 10px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   z-index: 10;
@@ -42,7 +42,7 @@ section[id] {
 }
 
 .platillo-solicitado {
-  margin-bottom: 30px;
+  margin-bottom: 5px;
   display: flex;
   flex-direction: column;
 }
@@ -60,7 +60,7 @@ section[id] {
   flex-direction: column;
   list-style: none;
   height: auto;
-  max-height: 230px;
+  max-height: 200px;
   overflow-y: scroll;
   justify-content: center;
   align-items: center;
@@ -80,8 +80,8 @@ section[id] {
   background-color: var(--color-1);
   color: var(--color-3);
   border: none;
-  padding: 5px 20px;
-  margin-top: 5px;
+  padding: 2px 20px;
+  margin-top: 2px;
   font-size: 1rem;
   cursor: pointer;
   border-radius: 5px;
