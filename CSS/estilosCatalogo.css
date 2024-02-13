@@ -59,11 +59,11 @@ section[id] {
   display: block;
   flex-direction: column;
   list-style: none;
-  padding-left: 20px;
   height: auto;
   max-height: 230px;
-  overflow-y: auto;
+  overflow-y: scroll;
   justify-content: center;
+  align-items: center;
 }
 
 .carrito__costo {
