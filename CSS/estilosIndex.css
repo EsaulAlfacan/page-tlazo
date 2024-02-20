@@ -562,6 +562,8 @@ table tbody td[colspan="2"] {
 
 /* ESTILOS DATOS PAGO */
 #datosPago {
+  width: 90%;
+  height: auto;
   display: none;
   top: 50%;
   left: 50%;
@@ -572,7 +574,6 @@ table tbody td[colspan="2"] {
   border: var(--color-4) 2px solid;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: auto;
-  max-width: 600px;
   background-color: var(--color-3);
   z-index: 1000;
   flex-direction: column;
