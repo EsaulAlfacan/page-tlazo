@@ -35,7 +35,7 @@ section[id] {
   width: 100%;
   background-color: var(--color-3);
   padding: 10px;
-  border-radius: 8px;
+  border-radius: 0 0 8px 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   z-index: 10;
   border: var(--color-2) 2px solid;
@@ -520,10 +520,10 @@ input[type="radio"]:checked + label:hover:before {
   color: var(--color-3);
   border: none;
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 26px;
 }
 
 .articulo-en-pantalla-completa {
@@ -535,7 +535,7 @@ input[type="radio"]:checked + label:hover:before {
   z-index: 1000;
   background-color: var(--color-3);
   overflow: auto;
-  padding: 20px;
+  padding: 10px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -545,8 +545,8 @@ input[type="radio"]:checked + label:hover:before {
 
 .articulo-en-pantalla-completa img {
   margin-top: 20px;
-  width: 260px;
-  height: 260px;
+  width: 280px;
+  height: 280px;
   border-radius: 20px;
   border: solid 1px var(--color-1);
   padding: 10px;
