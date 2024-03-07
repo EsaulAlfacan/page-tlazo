@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
           ".platillo__nombre"
         ).textContent;
 
-      let precioPlayera = 50;
+      let precioPlayera = 39;
       let costoTotal = precioPlayera * cantidad;
       let costo = parseInt(costoTotal);
 

@@ -558,6 +558,108 @@ input[type="radio"]:checked + label:hover:before {
   gap: 20px;
 }
 
+/*OFERTAS*/
+/*OFERTAS*/
+.oferta-container {
+  display: flex;
+  flex-direction: column; /* Usar column para apilar elementos verticalmente */
+  border: solid var(--color-2) 1px;
+  background-color: var(--color-1); /* Usa el azul oscuro para el fondo */
+  color: var(--color-3); /* Texto en gris muy claro para contraste */
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 1rem; /* Padding superior e inferior y un poco de padding horizontal */
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  z-index: -200;
+}
+
+.oferta-title {
+  font-size: 6rem;
+  letter-spacing: 1rem;
+  margin-bottom: 20px;
+  color: var(--color-3);
+  text-shadow: 6px 10px var(--color-4);
+}
+
+.oferta-details {
+  background-color: var(--color-3);
+  color: var(--color-1);
+  font-size: 3rem;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 8px 10px 12px var(--color-4);
+}
+
+.oferta-price {
+  font-size: 12rem;
+  color: var(--color-4); /* Precio en marrón grisáceo */
+  margin-bottom: 20px;
+  text-shadow: 3px 3px var(--color-3); /* Sombra en el texto para destacar */
+}
+
+.oferta-footer {
+  font-size: 18px;
+  color: var(--color-3);
+  background-color: var(--color-4); /* Fondo casi negro para el footer */
+  padding: 5px;
+  border-radius: 5px; /* Bordes redondeados para el footer */
+  display: inline-block;
+}
+
+/* Media queries para hacer la oferta responsive sin cambiar el height */
+@media (max-width: 1200px) {
+  .oferta-title {
+    font-size: 4rem; /* Tamaño de letra más pequeño para pantallas más estrechas */
+    letter-spacing: 0.5rem;
+  }
+  .oferta-details {
+    font-size: 2rem;
+  }
+  .oferta-price {
+    font-size: 8rem;
+  }
+  .oferta-footer {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .oferta-title {
+    font-size: 3rem;
+    letter-spacing: 0.3rem;
+  }
+  .oferta-details {
+    font-size: 1.5rem;
+  }
+  .oferta-price {
+    font-size: 6rem;
+  }
+  .oferta-footer {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .oferta-title {
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+  }
+  .oferta-details {
+    font-size: 1rem;
+  }
+  .oferta-price {
+    font-size: 4rem;
+  }
+  .oferta-footer {
+    font-size: 12px;
+  }
+}
+
 /*MEDIA QUERYS*/
 @media (max-width: 700px) {
   .menu {
